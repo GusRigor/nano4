@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1CD24E8C247D9A5C0064B62F /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24E8B247D9A5C0064B62F /* DatabaseController.swift */; };
-		1CD24E8F247DA3520064B62F /* FilmeSerie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24E8D247DA3520064B62F /* FilmeSerie+CoreDataClass.swift */; };
-		1CD24E90247DA3520064B62F /* FilmeSerie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24E8E247DA3520064B62F /* FilmeSerie+CoreDataProperties.swift */; };
 		1CDF9A22247977520061BDF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF9A21247977520061BDF5 /* AppDelegate.swift */; };
 		1CDF9A24247977520061BDF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF9A23247977520061BDF5 /* SceneDelegate.swift */; };
 		1CDF9A26247977520061BDF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF9A25247977520061BDF5 /* ViewController.swift */; };
@@ -21,8 +19,6 @@
 
 /* Begin PBXFileReference section */
 		1CD24E8B247D9A5C0064B62F /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
-		1CD24E8D247DA3520064B62F /* FilmeSerie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmeSerie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1CD24E8E247DA3520064B62F /* FilmeSerie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmeSerie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1CDF9A1E247977520061BDF5 /* nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDF9A21247977520061BDF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CDF9A23247977520061BDF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +60,6 @@
 		1CDF9A20247977520061BDF5 /* nano4 */ = {
 			isa = PBXGroup;
 			children = (
-				1CD24E8D247DA3520064B62F /* FilmeSerie+CoreDataClass.swift */,
-				1CD24E8E247DA3520064B62F /* FilmeSerie+CoreDataProperties.swift */,
 				1CDF9A21247977520061BDF5 /* AppDelegate.swift */,
 				1CD24E8B247D9A5C0064B62F /* DatabaseController.swift */,
 				1CDF9A23247977520061BDF5 /* SceneDelegate.swift */,
@@ -153,9 +147,7 @@
 				1CD24E8C247D9A5C0064B62F /* DatabaseController.swift in Sources */,
 				1CDF9A26247977520061BDF5 /* ViewController.swift in Sources */,
 				1CDF9A22247977520061BDF5 /* AppDelegate.swift in Sources */,
-				1CD24E90247DA3520064B62F /* FilmeSerie+CoreDataProperties.swift in Sources */,
 				1CDF9A2C247977520061BDF5 /* nano4.xcdatamodeld in Sources */,
-				1CD24E8F247DA3520064B62F /* FilmeSerie+CoreDataClass.swift in Sources */,
 				1CDF9A24247977520061BDF5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

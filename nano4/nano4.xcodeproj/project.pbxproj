@@ -14,6 +14,7 @@
 		1CD24F40247DCC170064B62F /* nano4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F3E247DCC170064B62F /* nano4.xcdatamodeld */; };
 		1CD24F42247DCC190064B62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD24F41247DCC190064B62F /* Assets.xcassets */; };
 		1CD24F45247DCC190064B62F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD24F43247DCC190064B62F /* LaunchScreen.storyboard */; };
+		1CD24F9B247EEE410064B62F /* ExtensionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F9A247EEE410064B62F /* ExtensionImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1CD24F41247DCC190064B62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CD24F44247DCC190064B62F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CD24F46247DCC190064B62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD24F9A247EEE410064B62F /* ExtensionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		1CD24F34247DCC170064B62F /* nano4 */ = {
 			isa = PBXGroup;
 			children = (
+				1CD24F9A247EEE410064B62F /* ExtensionImage.swift */,
 				1CD24F35247DCC170064B62F /* AppDelegate.swift */,
 				1CD24F37247DCC170064B62F /* SceneDelegate.swift */,
 				1CD24F39247DCC170064B62F /* ViewController.swift */,
@@ -144,6 +147,7 @@
 				1CD24F3A247DCC170064B62F /* ViewController.swift in Sources */,
 				1CD24F36247DCC170064B62F /* AppDelegate.swift in Sources */,
 				1CD24F40247DCC170064B62F /* nano4.xcdatamodeld in Sources */,
+				1CD24F9B247EEE410064B62F /* ExtensionImage.swift in Sources */,
 				1CD24F38247DCC170064B62F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

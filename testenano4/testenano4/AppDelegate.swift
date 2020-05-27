@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  nano4
+//  testenano4
 //
 //  Created by Gustavo Rigor on 26/05/20.
 //  Copyright © 2020 Gustavo Rigor. All rights reserved.
@@ -28,42 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        //self.saveContext()
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-    
-    func insertRecord(nome : String, duracao : Int32,  imgURL : String){
-        let filmSerie = FilmSerie(context: persistentContainer.viewContext)
-        filmSerie.nome = nome
-        filmSerie.duracao = duracao
-        filmSerie.imgURL = imgURL
-        saveContext()
-    }
-    
-    func fetchRecords() -> [FilmSerie]{
-        var aarFilmSerie = [FilmSerie]()
-        let fetchRequest = NSFetchRequest<FilmSerie>(entityName: "FilmSerie")
-        do {
-            aarFilmSerie  = try persistentContainer.viewContext.fetch(fetchRequest)
-        }catch{
-            print(error)
-        }
-        
-        return aarFilmSerie
-    }
-    
-    func deleteRecord(filmSerie : FilmSerie){
-        persistentContainer.viewContext.delete(filmSerie)
-        saveContext()
-    }
-    
-    func updateRecord(filmSerie : FilmSerie, nome : String, duracao : Int32,  imgURL : String){
-        filmSerie.nome = nome
-        filmSerie.duracao = duracao
-        filmSerie.imgURL = imgURL
-        saveContext()
     }
 
     // MARK: - Core Data stack
@@ -75,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "nano4")
+        let container = NSPersistentContainer(name: "testenano4")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CD24F36247DCC170064B62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F35247DCC170064B62F /* AppDelegate.swift */; };
-		1CD24F38247DCC170064B62F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F37247DCC170064B62F /* SceneDelegate.swift */; };
-		1CD24F3A247DCC170064B62F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F39247DCC170064B62F /* ViewController.swift */; };
-		1CD24F3D247DCC170064B62F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD24F3B247DCC170064B62F /* Main.storyboard */; };
-		1CD24F40247DCC170064B62F /* nano4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F3E247DCC170064B62F /* nano4.xcdatamodeld */; };
-		1CD24F42247DCC190064B62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD24F41247DCC190064B62F /* Assets.xcassets */; };
-		1CD24F45247DCC190064B62F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD24F43247DCC190064B62F /* LaunchScreen.storyboard */; };
+		1CD24F5B247E01190064B62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F5A247E01190064B62F /* AppDelegate.swift */; };
+		1CD24F5D247E01190064B62F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F5C247E01190064B62F /* SceneDelegate.swift */; };
+		1CD24F5F247E01190064B62F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F5E247E01190064B62F /* ViewController.swift */; };
+		1CD24F62247E01190064B62F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD24F60247E01190064B62F /* Main.storyboard */; };
+		1CD24F65247E01190064B62F /* testenano4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F63247E01190064B62F /* testenano4.xcdatamodeld */; };
+		1CD24F67247E011C0064B62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD24F66247E011C0064B62F /* Assets.xcassets */; };
+		1CD24F6A247E011C0064B62F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD24F68247E011C0064B62F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1CD24F32247DCC170064B62F /* nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CD24F35247DCC170064B62F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CD24F37247DCC170064B62F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1CD24F39247DCC170064B62F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1CD24F3C247DCC170064B62F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1CD24F3F247DCC170064B62F /* nano4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nano4.xcdatamodel; sourceTree = "<group>"; };
-		1CD24F41247DCC190064B62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1CD24F44247DCC190064B62F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1CD24F46247DCC190064B62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD24F57247E01190064B62F /* testenano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testenano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD24F5A247E01190064B62F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CD24F5C247E01190064B62F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1CD24F5E247E01190064B62F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CD24F61247E01190064B62F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CD24F64247E01190064B62F /* testenano4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testenano4.xcdatamodel; sourceTree = "<group>"; };
+		1CD24F66247E011C0064B62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CD24F69247E011C0064B62F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CD24F6B247E011C0064B62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1CD24F2F247DCC170064B62F /* Frameworks */ = {
+		1CD24F54247E01190064B62F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CD24F29247DCC170064B62F = {
+		1CD24F4E247E01190064B62F = {
 			isa = PBXGroup;
 			children = (
-				1CD24F34247DCC170064B62F /* nano4 */,
-				1CD24F33247DCC170064B62F /* Products */,
+				1CD24F59247E01190064B62F /* testenano4 */,
+				1CD24F58247E01190064B62F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1CD24F33247DCC170064B62F /* Products */ = {
+		1CD24F58247E01190064B62F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1CD24F32247DCC170064B62F /* nano4.app */,
+				1CD24F57247E01190064B62F /* testenano4.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1CD24F34247DCC170064B62F /* nano4 */ = {
+		1CD24F59247E01190064B62F /* testenano4 */ = {
 			isa = PBXGroup;
 			children = (
-				1CD24F35247DCC170064B62F /* AppDelegate.swift */,
-				1CD24F37247DCC170064B62F /* SceneDelegate.swift */,
-				1CD24F39247DCC170064B62F /* ViewController.swift */,
-				1CD24F3B247DCC170064B62F /* Main.storyboard */,
-				1CD24F41247DCC190064B62F /* Assets.xcassets */,
-				1CD24F43247DCC190064B62F /* LaunchScreen.storyboard */,
-				1CD24F46247DCC190064B62F /* Info.plist */,
-				1CD24F3E247DCC170064B62F /* nano4.xcdatamodeld */,
+				1CD24F5A247E01190064B62F /* AppDelegate.swift */,
+				1CD24F5C247E01190064B62F /* SceneDelegate.swift */,
+				1CD24F5E247E01190064B62F /* ViewController.swift */,
+				1CD24F60247E01190064B62F /* Main.storyboard */,
+				1CD24F66247E011C0064B62F /* Assets.xcassets */,
+				1CD24F68247E011C0064B62F /* LaunchScreen.storyboard */,
+				1CD24F6B247E011C0064B62F /* Info.plist */,
+				1CD24F63247E01190064B62F /* testenano4.xcdatamodeld */,
 			);
-			path = nano4;
+			path = testenano4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1CD24F31247DCC170064B62F /* nano4 */ = {
+		1CD24F56247E01190064B62F /* testenano4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1CD24F49247DCC190064B62F /* Build configuration list for PBXNativeTarget "nano4" */;
+			buildConfigurationList = 1CD24F6E247E011C0064B62F /* Build configuration list for PBXNativeTarget "testenano4" */;
 			buildPhases = (
-				1CD24F2E247DCC170064B62F /* Sources */,
-				1CD24F2F247DCC170064B62F /* Frameworks */,
-				1CD24F30247DCC170064B62F /* Resources */,
+				1CD24F53247E01190064B62F /* Sources */,
+				1CD24F54247E01190064B62F /* Frameworks */,
+				1CD24F55247E01190064B62F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = nano4;
-			productName = nano4;
-			productReference = 1CD24F32247DCC170064B62F /* nano4.app */;
+			name = testenano4;
+			productName = testenano4;
+			productReference = 1CD24F57247E01190064B62F /* testenano4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1CD24F2A247DCC170064B62F /* Project object */ = {
+		1CD24F4F247E01190064B62F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Gustavo Rigor";
 				TargetAttributes = {
-					1CD24F31247DCC170064B62F = {
+					1CD24F56247E01190064B62F = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = 1CD24F2D247DCC170064B62F /* Build configuration list for PBXProject "nano4" */;
+			buildConfigurationList = 1CD24F52247E01190064B62F /* Build configuration list for PBXProject "testenano4" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 1CD24F29247DCC170064B62F;
-			productRefGroup = 1CD24F33247DCC170064B62F /* Products */;
+			mainGroup = 1CD24F4E247E01190064B62F;
+			productRefGroup = 1CD24F58247E01190064B62F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1CD24F31247DCC170064B62F /* nano4 */,
+				1CD24F56247E01190064B62F /* testenano4 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1CD24F30247DCC170064B62F /* Resources */ = {
+		1CD24F55247E01190064B62F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CD24F45247DCC190064B62F /* LaunchScreen.storyboard in Resources */,
-				1CD24F42247DCC190064B62F /* Assets.xcassets in Resources */,
-				1CD24F3D247DCC170064B62F /* Main.storyboard in Resources */,
+				1CD24F6A247E011C0064B62F /* LaunchScreen.storyboard in Resources */,
+				1CD24F67247E011C0064B62F /* Assets.xcassets in Resources */,
+				1CD24F62247E01190064B62F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1CD24F2E247DCC170064B62F /* Sources */ = {
+		1CD24F53247E01190064B62F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CD24F3A247DCC170064B62F /* ViewController.swift in Sources */,
-				1CD24F36247DCC170064B62F /* AppDelegate.swift in Sources */,
-				1CD24F40247DCC170064B62F /* nano4.xcdatamodeld in Sources */,
-				1CD24F38247DCC170064B62F /* SceneDelegate.swift in Sources */,
+				1CD24F65247E01190064B62F /* testenano4.xcdatamodeld in Sources */,
+				1CD24F5F247E01190064B62F /* ViewController.swift in Sources */,
+				1CD24F5B247E01190064B62F /* AppDelegate.swift in Sources */,
+				1CD24F5D247E01190064B62F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1CD24F3B247DCC170064B62F /* Main.storyboard */ = {
+		1CD24F60247E01190064B62F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1CD24F3C247DCC170064B62F /* Base */,
+				1CD24F61247E01190064B62F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1CD24F43247DCC190064B62F /* LaunchScreen.storyboard */ = {
+		1CD24F68247E011C0064B62F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1CD24F44247DCC190064B62F /* Base */,
+				1CD24F69247E011C0064B62F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1CD24F47247DCC190064B62F /* Debug */ = {
+		1CD24F6C247E011C0064B62F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		1CD24F48247DCC190064B62F /* Release */ = {
+		1CD24F6D247E011C0064B62F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,34 +284,34 @@
 			};
 			name = Release;
 		};
-		1CD24F4A247DCC190064B62F /* Debug */ = {
+		1CD24F6F247E011C0064B62F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = nano4/Info.plist;
+				INFOPLIST_FILE = testenano4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = t1.nano4;
+				PRODUCT_BUNDLE_IDENTIFIER = t1.testenano4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1CD24F4B247DCC190064B62F /* Release */ = {
+		1CD24F70247E011C0064B62F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = nano4/Info.plist;
+				INFOPLIST_FILE = testenano4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = t1.nano4;
+				PRODUCT_BUNDLE_IDENTIFIER = t1.testenano4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,20 +321,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1CD24F2D247DCC170064B62F /* Build configuration list for PBXProject "nano4" */ = {
+		1CD24F52247E01190064B62F /* Build configuration list for PBXProject "testenano4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CD24F47247DCC190064B62F /* Debug */,
-				1CD24F48247DCC190064B62F /* Release */,
+				1CD24F6C247E011C0064B62F /* Debug */,
+				1CD24F6D247E011C0064B62F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1CD24F49247DCC190064B62F /* Build configuration list for PBXNativeTarget "nano4" */ = {
+		1CD24F6E247E011C0064B62F /* Build configuration list for PBXNativeTarget "testenano4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CD24F4A247DCC190064B62F /* Debug */,
-				1CD24F4B247DCC190064B62F /* Release */,
+				1CD24F6F247E011C0064B62F /* Debug */,
+				1CD24F70247E011C0064B62F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -342,17 +342,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1CD24F3E247DCC170064B62F /* nano4.xcdatamodeld */ = {
+		1CD24F63247E01190064B62F /* testenano4.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1CD24F3F247DCC170064B62F /* nano4.xcdatamodel */,
+				1CD24F64247E01190064B62F /* testenano4.xcdatamodel */,
 			);
-			currentVersion = 1CD24F3F247DCC170064B62F /* nano4.xcdatamodel */;
-			path = nano4.xcdatamodeld;
+			currentVersion = 1CD24F64247E01190064B62F /* testenano4.xcdatamodel */;
+			path = testenano4.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 1CD24F2A247DCC170064B62F /* Project object */;
+	rootObject = 1CD24F4F247E01190064B62F /* Project object */;
 }

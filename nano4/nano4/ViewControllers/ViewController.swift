@@ -8,6 +8,9 @@
 
 import UIKit
 
+var dataSourceArray = [FilmSerie]()
+
+
 //Adicionada a classe as extensões para o controle da tableview
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -15,7 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableViewGeneric: UITableView!
     
-    var dataSourceArray = [FilmSerie]()
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     

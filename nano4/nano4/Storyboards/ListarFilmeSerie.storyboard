@@ -81,6 +81,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="zjI-PI-Jky"/>
                     <connections>
+                        <outlet property="imgFilmeSerie" destination="U68-cG-Vdc" id="p4l-dW-p1K"/>
                         <outlet property="listaFilmeSerie" destination="cvz-je-345" id="A5X-vD-vMR"/>
                     </connections>
                 </viewController>

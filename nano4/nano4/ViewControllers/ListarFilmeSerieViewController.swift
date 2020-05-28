@@ -11,6 +11,7 @@ import UIKit
 class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var listaFilmeSerie: UITableView!
+    @IBOutlet weak var imgFilmeSerie: UIImageView!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -26,12 +27,18 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           let filmSerie = dataSourceArray[indexPath.row]
+        let filmSerie = dataSourceArray[indexPath.row]
+        if filmSerie.imgURL != "" {
+            imgFilmeSerie.load(url: URL(string: filmSerie.imgURL!)!)
+        }else{
+            imgFilmeSerie.image = UIImage(systemName: "film")
+        }
+        /*
            var nomeTextField: UITextField?
            var duracaoTextField: UITextField?
            var imgURLTextField: UITextField?
         
-           
+
            let mensagemDialogo = UIAlertController(title: "Atualizando o Filme", message: "Atualizando o filme vc assistiu?", preferredStyle: .alert)
            
            let ok = UIAlertAction(title: "Atualizar", style: .default, handler: {(action) -> Void in
@@ -69,6 +76,7 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
                
            }
            self.present(mensagemDialogo, animated: true, completion: nil)
+ */
        }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

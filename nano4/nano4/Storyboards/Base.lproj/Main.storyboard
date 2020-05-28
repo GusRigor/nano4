@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KXE-QW-REd">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,6 +7,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Principal-->
+        <scene sceneID="guf-I7-rnZ">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="T32-U6-GFP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Principal" image="clock" catalog="system" selectedImage="clock" springLoaded="YES" id="ans-jT-oZT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KhK-FF-ecW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jDp-Ry-3Kk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BOm-cA-Sj0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="-99"/>
+        </scene>
+        <!--CadastrarFilmeSerie-->
+        <scene sceneID="YcS-2N-4ZC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CadastrarFilmeSerie" id="nQz-aH-caZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="D3X-hm-XAn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHf-Gy-Sl3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-496" y="-631"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -16,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cbn-yt-LbU">
-                                <rect key="frame" x="45" y="110" width="324" height="516"/>
+                                <rect key="frame" x="45" y="149" width="324" height="438"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -46,37 +72,60 @@
                                     <action selector="AddFilmSerie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HUj-FE-3Ao"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TESTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCq-f0-0zF">
-                                <rect key="frame" x="177" y="674" width="51" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FxN-Wn-5ly" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1qP-7J-Gz0"/>
                             <constraint firstItem="Cbn-yt-LbU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="78d-lQ-vvD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cbn-yt-LbU" secondAttribute="trailing" constant="45" id="82q-Xb-lTb"/>
-                            <constraint firstItem="Cbn-yt-LbU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="ADm-YM-OYc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FxN-Wn-5ly" secondAttribute="trailing" constant="20" id="RIc-47-lWo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cbn-yt-LbU" secondAttribute="bottom" constant="110" id="f6i-Ge-nCs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cbn-yt-LbU" secondAttribute="bottom" constant="100" id="f6i-Ge-nCs"/>
                             <constraint firstItem="Cbn-yt-LbU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="occ-AZ-xXI"/>
                             <constraint firstItem="Cbn-yt-LbU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zJT-NN-WPR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dr6-ig-43d"/>
                     <connections>
                         <outlet property="tableViewGeneric" destination="Cbn-yt-LbU" id="biF-tV-CyD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78.260869565217391" y="-77.445652173913047"/>
+            <point key="canvasLocation" x="829" y="-99"/>
+        </scene>
+        <!--ListarFilmeSerie-->
+        <scene sceneID="UhO-ow-nUp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListarFilmeSerie" id="cIR-wY-7fe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="hJl-qV-7Wt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rI-UH-z3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-515" y="95"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hrf-l1-I6q">
+            <objects>
+                <tabBarController id="KXE-QW-REd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nWw-75-FV0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="T32-U6-GFP" kind="relationship" relationship="viewControllers" id="WUK-X7-te0"/>
+                        <segue destination="cIR-wY-7fe" kind="relationship" relationship="viewControllers" id="rxN-7K-gAP"/>
+                        <segue destination="nQz-aH-caZ" kind="relationship" relationship="viewControllers" id="x7r-as-GRu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="maL-eE-8Qe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1096" y="-99"/>
         </scene>
     </scenes>
     <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="gato de chapeu" width="600" height="600"/>
     </resources>
 </document>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mIN-wh-Ut0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,6 +7,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Cadastro-->
+        <scene sceneID="rgi-vt-M7o">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6u-TA-nH8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="mIN-wh-Ut0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cadastro" image="plus.circle" catalog="system" id="gPm-s8-pMf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="isv-nI-R5T">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tIH-Cb-Mlh" kind="relationship" relationship="rootViewController" id="b8O-Ch-XR6"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-584" y="48"/>
+        </scene>
         <!--Cadastrar Filme Serie View Controller-->
         <scene sceneID="3W3-rj-SzC">
             <objects>
@@ -17,10 +34,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fTA-gl-U9x"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vMT-XW-brP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oI-LL-W5R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="43" y="71"/>
+            <point key="canvasLocation" x="357" y="48"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

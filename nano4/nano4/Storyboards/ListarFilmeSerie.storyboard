@@ -50,7 +50,7 @@
                                 <rect key="frame" x="20" y="291" width="374" height="391"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2jn-fy-VGT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2jn-fy-VGT">
                                         <rect key="frame" x="0.0" y="28" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2jn-fy-VGT" id="M6k-ML-hYz">
@@ -59,6 +59,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wUT-bk-UMP" id="aEo-sG-G0r"/>
+                                    <outlet property="delegate" destination="wUT-bk-UMP" id="G6S-1s-jHQ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -76,6 +80,9 @@
                         <viewLayoutGuide key="safeArea" id="fOh-15-u9k"/>
                     </view>
                     <navigationItem key="navigationItem" id="zjI-PI-Jky"/>
+                    <connections>
+                        <outlet property="listaFilmeSerie" destination="cvz-je-345" id="A5X-vD-vMR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVs-At-Mr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

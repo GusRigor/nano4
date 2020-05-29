@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cvz-je-345">
-                                <rect key="frame" x="20" y="291" width="374" height="391"/>
+                                <rect key="frame" x="20" y="291" width="374" height="376"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2jn-fy-VGT">
@@ -75,7 +75,7 @@
                             <constraint firstItem="cvz-je-345" firstAttribute="leading" secondItem="fOh-15-u9k" secondAttribute="leading" constant="20" id="e4v-sT-8Hz"/>
                             <constraint firstItem="fOh-15-u9k" firstAttribute="trailing" secondItem="cvz-je-345" secondAttribute="trailing" constant="20" id="fFE-hu-Wyp"/>
                             <constraint firstItem="uh9-7O-GgU" firstAttribute="centerX" secondItem="2en-Fw-qIV" secondAttribute="centerX" id="lbF-6t-0kw"/>
-                            <constraint firstItem="fOh-15-u9k" firstAttribute="bottom" secondItem="cvz-je-345" secondAttribute="bottom" constant="5" id="o80-J3-V00"/>
+                            <constraint firstItem="fOh-15-u9k" firstAttribute="bottom" secondItem="cvz-je-345" secondAttribute="bottom" constant="20" id="o80-J3-V00"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fOh-15-u9k"/>
                     </view>

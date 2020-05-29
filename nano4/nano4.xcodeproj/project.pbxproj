@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C95EA3124818168001BE5E5 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95EA3024818168001BE5E5 /* PrincipalViewController.swift */; };
 		1CD24F36247DCC170064B62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F35247DCC170064B62F /* AppDelegate.swift */; };
 		1CD24F38247DCC170064B62F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F37247DCC170064B62F /* SceneDelegate.swift */; };
 		1CD24F3A247DCC170064B62F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F39247DCC170064B62F /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C95EA3024818168001BE5E5 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		1CD24F32247DCC170064B62F /* nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD24F35247DCC170064B62F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CD24F37247DCC170064B62F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1CD24F39247DCC170064B62F /* ViewController.swift */,
+				1C95EA3024818168001BE5E5 /* PrincipalViewController.swift */,
 				E1395258248032DD00DDE2C7 /* ListarFilmeSerieViewController.swift */,
 				E139525A2480331800DDE2C7 /* CadastrarFilmeSerieViewController.swift */,
 			);
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1395259248032DD00DDE2C7 /* ListarFilmeSerieViewController.swift in Sources */,
+				1C95EA3124818168001BE5E5 /* PrincipalViewController.swift in Sources */,
 				1CD24F3A247DCC170064B62F /* ViewController.swift in Sources */,
 				1CD24F36247DCC170064B62F /* AppDelegate.swift in Sources */,
 				1CD24F40247DCC170064B62F /* nano4.xcdatamodeld in Sources */,

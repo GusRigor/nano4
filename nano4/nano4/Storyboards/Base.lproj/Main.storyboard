@@ -16,12 +16,72 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jDp-Ry-3Kk"/>
+                        <segue destination="G1H-Np-WaQ" kind="relationship" relationship="rootViewController" id="YSI-PW-N0G"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOm-cA-Sj0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17" y="-99"/>
+        </scene>
+        <!--Principal-->
+        <scene sceneID="nHs-2m-JWQ">
+            <objects>
+                <viewController id="G1H-Np-WaQ" customClass="Principal" customModule="nano4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsg-1s-dIA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="B1k-1p-6hO">
+                                <rect key="frame" x="157" y="91" width="100" height="88.666666666666671"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ANg-op-DAC"/>
+                                    <constraint firstAttribute="height" constant="90" id="Tf4-fR-uIz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horas assistidas até agora:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPi-yi-QpV">
+                                <rect key="frame" x="34.333333333333343" y="205" width="345.33333333333326" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1h4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCt-JC-cfp">
+                                <rect key="frame" x="182.66666666666666" y="266" width="49" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr6-lJ-V9c">
+                                <rect key="frame" x="314" y="63" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="k9g-AQ-rhD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SCt-JC-cfp" firstAttribute="top" secondItem="lPi-yi-QpV" secondAttribute="bottom" constant="25" id="5PG-0K-6Mp"/>
+                            <constraint firstItem="lPi-yi-QpV" firstAttribute="top" secondItem="B1k-1p-6hO" secondAttribute="bottom" constant="25" id="67X-7M-XB2"/>
+                            <constraint firstItem="B1k-1p-6hO" firstAttribute="centerX" secondItem="vsg-1s-dIA" secondAttribute="centerX" id="McI-mh-XO2"/>
+                            <constraint firstItem="SCt-JC-cfp" firstAttribute="centerX" secondItem="vsg-1s-dIA" secondAttribute="centerX" id="iOq-nB-fkj"/>
+                            <constraint firstItem="lPi-yi-QpV" firstAttribute="centerX" secondItem="vsg-1s-dIA" secondAttribute="centerX" id="qoG-NW-MVw"/>
+                            <constraint firstItem="B1k-1p-6hO" firstAttribute="top" secondItem="Ft1-KX-gQL" secondAttribute="top" constant="90" id="uaH-Qu-35V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ft1-KX-gQL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CFn-sE-e6A"/>
+                    <connections>
+                        <outlet property="TotalHoras" destination="SCt-JC-cfp" id="aCE-hH-lt7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0h-V8-e5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.81159420289862" y="-99.456521739130437"/>
         </scene>
         <!--CadastrarFilmeSerie-->
         <scene sceneID="YcS-2N-4ZC">
@@ -36,6 +96,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nano4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -84,9 +145,8 @@
                         <outlet property="tableViewGeneric" destination="Cbn-yt-LbU" id="biF-tV-CyD"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828.98550724637687" y="-99.456521739130437"/>
+            <point key="canvasLocation" x="1887" y="-99"/>
         </scene>
         <!--ListarFilmeSerie-->
         <scene sceneID="UhO-ow-nUp">

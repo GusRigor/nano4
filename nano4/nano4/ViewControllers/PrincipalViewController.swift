@@ -10,7 +10,33 @@ import Foundation
 import UIKit
 
 
-class Principal: UIViewController{
+class Principal: UIViewController, UITableViewDataSource, UITableViewDelegate{
+    
+    @IBOutlet weak var horasMesTabView: UITableView!
+    let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return meses.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        let aux = meses[indexPath.row]
+        if aux == "Maio"{
+            cell?.textLabel?.text = aux
+            cell?.textLabel?.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+            cell?.detailTextLabel?.text = minutosToHora(Int(minutosTotais()))
+            cell?.detailTextLabel?.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+            return cell!
+        }
+        cell?.textLabel?.text = aux
+        cell?.textLabel?.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+        cell?.detailTextLabel?.text = "0h 0"
+        cell?.detailTextLabel?.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+        return cell!
+    }
+    
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2912F12486DA5D00C96A84 /* ConfigUsuario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2912F02486DA5D00C96A84 /* ConfigUsuario.storyboard */; };
+		1C2912F32486DD7300C96A84 /* ConfigUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2912F22486DD7300C96A84 /* ConfigUsuario.swift */; };
 		1C95EA3124818168001BE5E5 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95EA3024818168001BE5E5 /* PrincipalViewController.swift */; };
 		1CD24F36247DCC170064B62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F35247DCC170064B62F /* AppDelegate.swift */; };
 		1CD24F38247DCC170064B62F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD24F37247DCC170064B62F /* SceneDelegate.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C2912F02486DA5D00C96A84 /* ConfigUsuario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfigUsuario.storyboard; sourceTree = "<group>"; };
+		1C2912F22486DD7300C96A84 /* ConfigUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUsuario.swift; sourceTree = "<group>"; };
 		1C95EA3024818168001BE5E5 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		1CD24F32247DCC170064B62F /* nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD24F35247DCC170064B62F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +91,9 @@
 			children = (
 				1CD24F43247DCC190064B62F /* LaunchScreen.storyboard */,
 				1CD24F3B247DCC170064B62F /* Main.storyboard */,
-				E139525C2480332A00DDE2C7 /* CadastrarFilmeSerie.storyboard */,
 				E13952562480329E00DDE2C7 /* ListarFilmeSerie.storyboard */,
+				E139525C2480332A00DDE2C7 /* CadastrarFilmeSerie.storyboard */,
+				1C2912F02486DA5D00C96A84 /* ConfigUsuario.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 				1C95EA3024818168001BE5E5 /* PrincipalViewController.swift */,
 				E1395258248032DD00DDE2C7 /* ListarFilmeSerieViewController.swift */,
 				E139525A2480331800DDE2C7 /* CadastrarFilmeSerieViewController.swift */,
+				1C2912F22486DD7300C96A84 /* ConfigUsuario.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 				1CD24F45247DCC190064B62F /* LaunchScreen.storyboard in Resources */,
 				E139525D2480332A00DDE2C7 /* CadastrarFilmeSerie.storyboard in Resources */,
 				1CD24F42247DCC190064B62F /* Assets.xcassets in Resources */,
+				1C2912F12486DA5D00C96A84 /* ConfigUsuario.storyboard in Resources */,
 				E13952572480329E00DDE2C7 /* ListarFilmeSerie.storyboard in Resources */,
 				1CD24F3D247DCC170064B62F /* Main.storyboard in Resources */,
 			);
@@ -185,6 +192,7 @@
 				E139525B2480331800DDE2C7 /* CadastrarFilmeSerieViewController.swift in Sources */,
 				1CD24F9B247EEE410064B62F /* ExtensionImage.swift in Sources */,
 				1CD24F38247DCC170064B62F /* SceneDelegate.swift in Sources */,
+				1C2912F32486DD7300C96A84 /* ConfigUsuario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,21 +10,23 @@ import UIKit
 
 class CadastrarFilmeSerieViewController: UIViewController {
 
+    @IBOutlet weak var tituloTextField: UITextField!
+    @IBOutlet weak var duracaoTextField: UITextField!
+    @IBOutlet weak var urlTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        
+    @IBAction func cadastrarFilme(_ sender: Any) {
+        let titulo = tituloTextField.text
+        let duracao = duracaoTextField.text
+        let url = urlTextField.text
+            
+//        if titulo != nil && duracao != nil {
+//            self.appDelegate.insertRecord(titulo: titulo!, duracao: duracao!)
+//            self.fetchAndUpdateTable()
+//        }
+}
 }

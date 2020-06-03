@@ -33,57 +33,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pT-ye-Mxc">
-                                <rect key="frame" x="40" y="264" width="48" height="21"/>
+                                <rect key="frame" x="40" y="216" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xzp-aQ-c3Z">
-                                <rect key="frame" x="40" y="293" width="295" height="34"/>
+                                <rect key="frame" x="40" y="245" width="295" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duração:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTJ-QW-EC2">
-                                <rect key="frame" x="40" y="361" width="69" height="21"/>
+                                <rect key="frame" x="40" y="313" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJm-fU-H3k">
-                                <rect key="frame" x="40" y="390" width="295" height="34"/>
+                                <rect key="frame" x="40" y="342" width="295" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL da Capa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9y-dd-Vrl">
-                                <rect key="frame" x="40" y="458" width="105" height="21"/>
+                                <rect key="frame" x="40" y="410" width="105" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="swF-6L-6mP">
-                                <rect key="frame" x="40" y="487" width="295" height="34"/>
+                                <rect key="frame" x="40" y="439" width="295" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhg-Hs-TkX">
-                                <rect key="frame" x="145.5" y="552" width="84" height="35"/>
+                                <rect key="frame" x="161" y="504" width="53" height="35"/>
                                 <color key="backgroundColor" red="0.432332243" green="0.072371399439999998" blue="0.06620832687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Cadastrar">
+                                <state key="normal" title="Salvar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="cadastrarFilme:" destination="tIH-Cb-Mlh" eventType="touchUpInside" id="fpo-ac-oPH"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="film" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fap-be-X41">
-                                <rect key="frame" x="87.5" y="61" width="200" height="137.5"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="137.5" y="61" width="100" height="87.5"/>
+                                <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="H1b-KM-7cc"/>
-                                    <constraint firstAttribute="height" constant="140" id="PUI-oG-lYj"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="aIH-RL-fMh"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="crJ-Wo-M06"/>
-                                    <constraint firstAttribute="width" constant="200" id="jut-uX-HwD"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="140" id="x0N-bP-fYE"/>
+                                    <constraint firstAttribute="width" constant="100" id="CNj-ic-IDW"/>
+                                    <constraint firstAttribute="height" constant="90" id="djt-ve-hWd"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -92,10 +91,10 @@
                             <constraint firstItem="Xzp-aQ-c3Z" firstAttribute="top" secondItem="0pT-ye-Mxc" secondAttribute="bottom" constant="8" id="8n4-ud-vMN"/>
                             <constraint firstItem="OTJ-QW-EC2" firstAttribute="leading" secondItem="fTA-gl-U9x" secondAttribute="leading" constant="40" id="ASK-zo-7hC"/>
                             <constraint firstItem="0pT-ye-Mxc" firstAttribute="leading" secondItem="fTA-gl-U9x" secondAttribute="leading" constant="40" id="D27-Ha-uUO"/>
+                            <constraint firstItem="Xzp-aQ-c3Z" firstAttribute="top" secondItem="fap-be-X41" secondAttribute="bottom" constant="95" id="DNQ-wF-GEt"/>
                             <constraint firstItem="fTA-gl-U9x" firstAttribute="trailing" secondItem="swF-6L-6mP" secondAttribute="trailing" constant="40" id="G4t-cc-krc"/>
                             <constraint firstItem="fap-be-X41" firstAttribute="centerX" secondItem="3nF-Kn-M7Q" secondAttribute="centerX" id="Ly8-Lk-Cnz"/>
                             <constraint firstItem="fTA-gl-U9x" firstAttribute="trailing" secondItem="QJm-fU-H3k" secondAttribute="trailing" constant="40" id="Nym-zI-hO3"/>
-                            <constraint firstItem="fTA-gl-U9x" firstAttribute="bottom" secondItem="nhg-Hs-TkX" secondAttribute="bottom" constant="31" id="OID-pb-Q3E"/>
                             <constraint firstItem="swF-6L-6mP" firstAttribute="leading" secondItem="fTA-gl-U9x" secondAttribute="leading" constant="40" id="XON-QN-kex"/>
                             <constraint firstItem="QJm-fU-H3k" firstAttribute="top" secondItem="OTJ-QW-EC2" secondAttribute="bottom" constant="8" id="Ybs-dq-m4R"/>
                             <constraint firstItem="s9y-dd-Vrl" firstAttribute="top" secondItem="QJm-fU-H3k" secondAttribute="bottom" constant="34" id="c1Y-ek-gye"/>
@@ -112,6 +111,11 @@
                         <viewLayoutGuide key="safeArea" id="fTA-gl-U9x"/>
                     </view>
                     <navigationItem key="navigationItem" id="vMT-XW-brP"/>
+                    <connections>
+                        <outlet property="duracaoTextField" destination="QJm-fU-H3k" id="9Z8-It-7aX"/>
+                        <outlet property="tituloTextField" destination="Xzp-aQ-c3Z" id="Pda-Gv-X16"/>
+                        <outlet property="urlTextField" destination="swF-6L-6mP" id="azg-uf-bgt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oI-LL-W5R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -23,17 +23,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nano #04" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUN-aP-dq8">
-                                <rect key="frame" x="142" y="473" width="130.33333333333337" height="35.666666666666686"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="30"/>
+                                <rect key="frame" x="146" y="473" width="122.33333333333331" height="38"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="32"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.61164183937823835" green="0.073893070265522831" blue="0.12727950730787882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="rsZ-TI-qau" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Vky-2C-Qyf"/>
                             <constraint firstItem="EUN-aP-dq8" firstAttribute="top" secondItem="rsZ-TI-qau" secondAttribute="bottom" constant="30" id="ll7-vl-JA5"/>
+                            <constraint firstItem="rsZ-TI-qau" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tQR-Zz-xFh"/>
                             <constraint firstItem="rsZ-TI-qau" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wUy-Ag-h8z"/>
+                            <constraint firstItem="rsZ-TI-qau" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wi2-Zx-YPD"/>
                             <constraint firstItem="EUN-aP-dq8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zFQ-D8-g8N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

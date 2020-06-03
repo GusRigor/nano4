@@ -12,19 +12,36 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
     
     @IBOutlet weak var listaFilmeSerie: UITableView!
     @IBOutlet weak var imgFilmeSerie: UIImageView!
+    @IBOutlet weak var fraseTela: UILabel!
+    
+    let notificacao = Notification.Name(rawValue: "atualizarEstilo")
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        carregarPreferenciasEstilo()
+        observer()
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchAndUpdateTable()
+        carregarPreferenciasEstilo()
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    func observer(){
+           NotificationCenter.default.addObserver(self, selector: #selector(self.atualizaTelaEstilo(notificacao:)), name: notificacao, object: nil)
+       }
+       @objc func atualizaTelaEstilo(notificacao: NSNotification){
+           print("a notificacao chegou")
+           atualizarEstilo()
+       }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let filmSerie = dataSourceArray[indexPath.row]
@@ -97,7 +114,13 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
         let filmSerie = dataSourceArray[indexPath.row]
         let aux = "\(filmSerie.nome!)"
         cell?.textLabel?.text = aux
-        cell?.textLabel?.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+        if isDarkMode{
+            cell?.backgroundColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+            cell?.textLabel?.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+        }else{
+            cell?.backgroundColor = .some(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+            cell?.textLabel?.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+        }
         return cell!
         
     }
@@ -106,7 +129,30 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
         dataSourceArray = appDelegate.fetchRecords()
         listaFilmeSerie.reloadData()
     }
-
+    
+    func atualizarEstilo(){
+        if isDarkMode{
+            self.view.backgroundColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+            self.fraseTela.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+            self.imgFilmeSerie.tintColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+            self.listaFilmeSerie.backgroundColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+        }else{
+           self.view.backgroundColor = .some(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+            self.fraseTela.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+            self.imgFilmeSerie.tintColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+            self.listaFilmeSerie.backgroundColor = .some(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+            }
+        fetchAndUpdateTable()
+    }
+    func carregarPreferenciasEstilo(){
+        let preferencia = UserDefaults.standard.bool(forKey: "DarkMode")
+        if preferencia{
+            isDarkMode = true
+            atualizarEstilo()
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 

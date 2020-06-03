@@ -55,7 +55,7 @@
                                 <rect key="frame" x="314" y="63" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="k9g-AQ-rhD"/>
@@ -117,6 +117,8 @@
                     <connections>
                         <outlet property="TotalHoras" destination="SCt-JC-cfp" id="aCE-hH-lt7"/>
                         <outlet property="horasMesTabView" destination="WVT-Lf-rnk" id="hpP-mP-uLe"/>
+                        <outlet property="imgRelogio" destination="B1k-1p-6hO" id="tEw-Ol-8df"/>
+                        <outlet property="telaPrincipalLabel" destination="lPi-yi-QpV" id="GaQ-Qz-mdd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0h-V8-e5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

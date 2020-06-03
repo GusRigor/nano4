@@ -98,8 +98,8 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
-            let filmSerie = dataSourceArray[indexPath.row]
-            appDelegate.deleteRecord(filmSerie: filmSerie)
+            let filme = dataSourceArray[indexPath.row]
+            appDelegate.deleteRecord(filme: filme)
             fetchAndUpdateTable()
         }
     }
@@ -111,8 +111,8 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        let filmSerie = dataSourceArray[indexPath.row]
-        let aux = "\(filmSerie.nome!)"
+        let filme = dataSourceArray[indexPath.row]
+        let aux = "\(filme.titulo!)"
         cell?.textLabel?.text = aux
         if isDarkMode{
             cell?.backgroundColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
@@ -151,16 +151,5 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
             atualizarEstilo()
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

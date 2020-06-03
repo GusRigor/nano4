@@ -25,8 +25,9 @@ class CadastrarFilmeSerieViewController: UIViewController {
         let url = urlTextField.text
             
 //        if titulo != nil && duracao != nil {
-//            self.appDelegate.insertRecord(titulo: titulo!, duracao: duracao!)
+//            self.appDelegate.insertRecord(titulo: titulo!, duracao: duracao!, imgURL: url!)
 //            self.fetchAndUpdateTable()
 //        }
-}
+    }
+    
 }

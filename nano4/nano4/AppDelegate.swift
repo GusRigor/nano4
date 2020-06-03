@@ -12,15 +12,12 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
 
     // MARK: UISceneSession Lifecycle
-
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
@@ -34,40 +31,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    func insertRecord(nome : String, duracao : Int32,  imgURL : String){
-        let filmSerie = FilmSerie(context: persistentContainer.viewContext)
-        filmSerie.nome = nome
-        filmSerie.duracao = duracao
-        filmSerie.imgURL = imgURL
+    // Insere filmes
+    func insertRecord(titulo: String, duracao: Int32,  imgURL: String){
+        let filme = Filme(context: persistentContainer.viewContext)
+        filme.titulo = titulo
+        filme.duracao = duracao
+        filme.imgURL = imgURL
         saveContext()
     }
     
-    func fetchRecords() -> [FilmSerie]{
-        var aarFilmSerie = [FilmSerie]()
-        let fetchRequest = NSFetchRequest<FilmSerie>(entityName: "FilmSerie")
+    // Busca filmes
+    func fetchRecords() -> [Filme]{
+        var arrayFilme = [Filme]()
+        let fetchRequest = NSFetchRequest<Filme>(entityName: "Filme")
+        
         do {
-            aarFilmSerie  = try persistentContainer.viewContext.fetch(fetchRequest)
+            arrayFilme  = try persistentContainer.viewContext.fetch(fetchRequest)
         }catch{
             print(error)
         }
-        
-        return aarFilmSerie
+        return arrayFilme
     }
     
-    func deleteRecord(filmSerie : FilmSerie){
-        persistentContainer.viewContext.delete(filmSerie)
+    // Deleta filmes
+    func deleteRecord(filme : Filme){
+        persistentContainer.viewContext.delete(filme)
         saveContext()
     }
     
-    func updateRecord(filmSerie : FilmSerie, nome : String, duracao : Int32,  imgURL : String){
-        filmSerie.nome = nome
-        filmSerie.duracao = duracao
-        filmSerie.imgURL = imgURL
+    // Atualiza filmes
+    func updateRecord(filme: Filme, titulo: String, duracao: Int32,  imgURL: String){
+        filme.titulo = titulo
+        filme.duracao = duracao
+        filme.imgURL = imgURL
         saveContext()
     }
 
     // MARK: - Core Data stack
-
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation

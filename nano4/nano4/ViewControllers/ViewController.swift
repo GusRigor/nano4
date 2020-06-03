@@ -8,19 +8,14 @@
 
 import UIKit
 
-var dataSourceArray = [FilmSerie]()
-
+var dataSourceArray = [Filme]()
 
 //Adicionada a classe as extensões para o controle da tableview
-
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
 
     @IBOutlet weak var tableViewGeneric: UITableView!
     
-    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //Essa função é usada para o quando a célula da tableView é selecionada, para o caso atual, estamos usando para editar as informações
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let filmSerie = dataSourceArray[indexPath.row]
+        let filme = dataSourceArray[indexPath.row]
         var nomeTextField: UITextField?
         var duracaoTextField: UITextField?
         var imgURLTextField: UITextField?
@@ -43,12 +38,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let mensagemDialogo = UIAlertController(title: "Atualizando o Filme", message: "Atualizando o filme vc assistiu?", preferredStyle: .alert)
         
         let ok = UIAlertAction(title: "Atualizar", style: .default, handler: {(action) -> Void in
-            let nome = nomeTextField?.text
+            let titulo = nomeTextField?.text
             let duracao = duracaoTextField?.text
             let imgURL = imgURLTextField?.text
             
-            if nome != nil && duracao != nil && imgURL != nil{
-                self.appDelegate.updateRecord(filmSerie: filmSerie, nome: nome!, duracao: Int32(duracao!)!, imgURL: imgURL!)
+            if titulo != nil && duracao != nil && imgURL != nil{
+                self.appDelegate.updateRecord(filme: filme, titulo: titulo!, duracao: Int32(duracao!)!, imgURL: imgURL!)
                 self.fetchAndUpdateTable()
             }
         })
@@ -63,17 +58,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         mensagemDialogo.addTextField{ (textField) -> Void in
             nomeTextField = textField
             nomeTextField?.placeholder = "Escreva o nome do filme"
-            nomeTextField?.text = filmSerie.nome
+            nomeTextField?.text = filme.titulo
         }
         mensagemDialogo.addTextField{ (textField) -> Void in
             duracaoTextField = textField
             duracaoTextField?.placeholder = "Qual a duração do filme? (minutos)"
-            duracaoTextField?.text = String(filmSerie.duracao)
+            duracaoTextField?.text = String(filme.duracao)
         }
         mensagemDialogo.addTextField{ (textField) -> Void in
             imgURLTextField = textField
             imgURLTextField?.placeholder = "Poderia adicionar a URL da capa do filme?"
-            imgURLTextField?.text = filmSerie.imgURL
+            imgURLTextField?.text = filme.imgURL
             
         }
         self.present(mensagemDialogo, animated: true, completion: nil)
@@ -83,8 +78,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //Está função faz a remoção do item da lista da tableview e do banco de dados. Para o caso é fazer aquela arrastadinha para o lado
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
-            let filmSerie = dataSourceArray[indexPath.row]
-            appDelegate.deleteRecord(filmSerie: filmSerie)
+            let filme = dataSourceArray[indexPath.row]
+            appDelegate.deleteRecord(filme: filme)
             fetchAndUpdateTable()
         }
     }
@@ -99,7 +94,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         let filmSerie = dataSourceArray[indexPath.row]
         let aux = """
-        nome: \(filmSerie.nome!)
+        nome: \(filmSerie.titulo!)
         duração:  \(String(filmSerie.duracao))
         URL:   \(filmSerie.imgURL!)
     """
@@ -108,14 +103,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
-    //Está função atualiza a lista e realiza um pesquisa no banco de dados
+    // Atualiza a lista e realiza um pesquisa no banco de dados
     func fetchAndUpdateTable(){
         dataSourceArray = appDelegate.fetchRecords()
         tableViewGeneric.reloadData()
     }
     
     
-    //Está função é referente ao botão do lado superior direito que realiza a adição de uma nova linha no banco de dados com as informações realizadas
+    // Função referente ao botão do lado superior direito que adiciona uma nova linha no banco de dados com as informações realizadas
     @IBAction func AddFilmSerie(_ sender: UIButton) {
         var nomeTextField: UITextField?
         var duracaoTextField: UITextField?
@@ -124,12 +119,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let mensagemDialogo = UIAlertController(title: "Adicionando Filme", message: "Qual filme vc assistiu?", preferredStyle: .alert)
         
         let ok = UIAlertAction(title: "OK", style: .default, handler: {(action) -> Void in
-            let nome = nomeTextField?.text
+            let titulo = nomeTextField?.text
             let duracao = duracaoTextField?.text
             let imgURL = imgURLTextField?.text
             
-            if nome != nil && duracao != nil && imgURL != nil{
-                self.appDelegate.insertRecord(nome: nome!, duracao: Int32(duracao ?? "0") ?? 0, imgURL: imgURL!)
+            if titulo != nil && duracao != nil && imgURL != nil{
+                self.appDelegate.insertRecord(titulo: titulo!, duracao: Int32(duracao ?? "0") ?? 0, imgURL: imgURL!)
                 self.fetchAndUpdateTable()
             }
         })

@@ -50,7 +50,7 @@
                                 <rect key="frame" x="20" y="291" width="374" height="376"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2jn-fy-VGT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" focusStyle="custom" id="2jn-fy-VGT">
                                         <rect key="frame" x="0.0" y="28" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2jn-fy-VGT" id="M6k-ML-hYz">
@@ -81,6 +81,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="zjI-PI-Jky"/>
                     <connections>
+                        <outlet property="fraseTela" destination="uh9-7O-GgU" id="f9g-TI-Prl"/>
                         <outlet property="imgFilmeSerie" destination="U68-cG-Vdc" id="p4l-dW-p1K"/>
                         <outlet property="listaFilmeSerie" destination="cvz-je-345" id="A5X-vD-vMR"/>
                     </connections>

@@ -58,6 +58,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="exA-Y4-GFH">
                                         <rect key="frame" x="284.33333333333337" y="0.0" width="51" height="31"/>
                                         <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="darkmodeSelecionado:" destination="e3V-q3-s8f" eventType="valueChanged" id="f2f-Z5-z25"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -92,8 +95,11 @@
                     <navigationItem key="navigationItem" id="TB4-4d-BhV"/>
                     <connections>
                         <outlet property="darkmode" destination="exA-Y4-GFH" id="ItY-6C-wzT"/>
+                        <outlet property="darkmodeFrase" destination="g6o-Tc-yV6" id="1Ew-dG-Ww3"/>
                         <outlet property="imgUsuario" destination="6PA-pN-kEp" id="VIN-1c-yl5"/>
                         <outlet property="nomeUsuario" destination="xdH-78-4Uo" id="4VH-2J-9HI"/>
+                        <outlet property="numVersaoLabel" destination="whS-wI-knh" id="BIT-Dx-jzj"/>
+                        <outlet property="versaoLabel" destination="gvi-pp-CIB" id="f5E-nE-6od"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbc-Sc-kPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -51,9 +51,8 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr6-lJ-V9c">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr6-lJ-V9c">
                                 <rect key="frame" x="314" y="63" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -101,14 +100,17 @@
                         <constraints>
                             <constraint firstItem="SCt-JC-cfp" firstAttribute="top" secondItem="lPi-yi-QpV" secondAttribute="bottom" constant="25" id="5PG-0K-6Mp"/>
                             <constraint firstItem="lPi-yi-QpV" firstAttribute="top" secondItem="B1k-1p-6hO" secondAttribute="bottom" constant="25" id="67X-7M-XB2"/>
+                            <constraint firstItem="Ft1-KX-gQL" firstAttribute="trailing" secondItem="dr6-lJ-V9c" secondAttribute="trailing" constant="54" id="D37-6y-HeY"/>
                             <constraint firstItem="WVT-Lf-rnk" firstAttribute="top" secondItem="SCt-JC-cfp" secondAttribute="bottom" constant="50" id="EXl-QJ-TDv"/>
                             <constraint firstItem="WVT-Lf-rnk" firstAttribute="centerX" secondItem="vsg-1s-dIA" secondAttribute="centerX" id="FD4-dN-Vya"/>
                             <constraint firstItem="B1k-1p-6hO" firstAttribute="centerX" secondItem="vsg-1s-dIA" secondAttribute="centerX" id="McI-mh-XO2"/>
                             <constraint firstItem="Ft1-KX-gQL" firstAttribute="trailing" secondItem="WVT-Lf-rnk" secondAttribute="trailing" constant="25" id="QIa-Tq-j69"/>
                             <constraint firstItem="Ft1-KX-gQL" firstAttribute="bottom" secondItem="WVT-Lf-rnk" secondAttribute="bottom" constant="25" id="Vb5-qX-fBe"/>
+                            <constraint firstItem="dr6-lJ-V9c" firstAttribute="top" secondItem="Ft1-KX-gQL" secondAttribute="top" constant="63" id="cRq-1k-GgK"/>
                             <constraint firstItem="WVT-Lf-rnk" firstAttribute="leading" secondItem="Ft1-KX-gQL" secondAttribute="leading" constant="25" id="gHr-ng-k7s"/>
                             <constraint firstItem="SCt-JC-cfp" firstAttribute="centerX" secondItem="vsg-1s-dIA" secondAttribute="centerX" id="iOq-nB-fkj"/>
                             <constraint firstItem="lPi-yi-QpV" firstAttribute="centerX" secondItem="vsg-1s-dIA" secondAttribute="centerX" id="qoG-NW-MVw"/>
+                            <constraint firstItem="dr6-lJ-V9c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ft1-KX-gQL" secondAttribute="leading" symbolic="YES" id="rWu-Cn-W4S"/>
                             <constraint firstItem="B1k-1p-6hO" firstAttribute="top" secondItem="Ft1-KX-gQL" secondAttribute="top" constant="90" id="uaH-Qu-35V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ft1-KX-gQL"/>
@@ -133,7 +135,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHf-Gy-Sl3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="-388"/>
+            <point key="canvasLocation" x="-519" y="-29"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -198,7 +200,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rI-UH-z3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-515" y="189"/>
+            <point key="canvasLocation" x="-536" y="55"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hrf-l1-I6q">
@@ -215,11 +217,22 @@
                         <segue destination="T32-U6-GFP" kind="relationship" relationship="viewControllers" id="WUK-X7-te0"/>
                         <segue destination="cIR-wY-7fe" kind="relationship" relationship="viewControllers" id="rxN-7K-gAP"/>
                         <segue destination="nQz-aH-caZ" kind="relationship" relationship="viewControllers" id="x7r-as-GRu"/>
+                        <segue destination="Ney-mK-Cs2" kind="relationship" relationship="viewControllers" id="jzc-3v-dgj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="maL-eE-8Qe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1096" y="-99"/>
+        </scene>
+        <!--ConfigUsuario-->
+        <scene sceneID="bsW-Qt-Mrc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ConfigUsuario" id="Ney-mK-Cs2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="J9V-Fu-Xw4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1c-tn-eSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546" y="138"/>
         </scene>
     </scenes>
     <resources>

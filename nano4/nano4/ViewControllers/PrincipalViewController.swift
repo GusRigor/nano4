@@ -84,8 +84,10 @@ class Principal: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     func minutosTotais() -> Int32{
         var aux:Int32 = 0
-        for x in 0...(dataSourceArray.count-1){
-            aux = aux + dataSourceArray[x].duracao
+        if dataSourceArray.count != 0 {
+            for x in 0...(dataSourceArray.count-1){
+                aux = aux + dataSourceArray[x].duracao
+            }
         }
         return aux
     }

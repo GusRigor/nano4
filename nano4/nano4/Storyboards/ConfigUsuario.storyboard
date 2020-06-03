@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="90" id="MrO-U0-tE3"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fulano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdH-78-4Uo">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fulano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdH-78-4Uo">
                                 <rect key="frame" x="163.66666666666666" y="205" width="87" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,15 +76,34 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="132" translatesAutoresizingMaskIntoConstraints="NO" id="EzA-oR-vA6">
+                                <rect key="frame" x="40" y="362" width="334" height="28.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filmes assistidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtp-mf-HVe">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQV-8f-QBu">
+                                        <rect key="frame" x="308" y="0.0" width="26" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="whS-wI-knh" firstAttribute="top" secondItem="gvi-pp-CIB" secondAttribute="bottom" constant="10" id="0Xr-ql-W9J"/>
+                            <constraint firstItem="EzA-oR-vA6" firstAttribute="top" secondItem="cLK-Et-qnS" secondAttribute="bottom" constant="15" id="1sl-JB-2DB"/>
                             <constraint firstItem="gvi-pp-CIB" firstAttribute="centerX" secondItem="Mzq-W6-DBd" secondAttribute="centerX" id="2L8-GU-3qH"/>
                             <constraint firstItem="kmD-8q-P38" firstAttribute="bottom" secondItem="whS-wI-knh" secondAttribute="bottom" constant="30" id="9d9-ym-51Q"/>
                             <constraint firstItem="6PA-pN-kEp" firstAttribute="top" secondItem="kmD-8q-P38" secondAttribute="top" constant="90" id="Ceh-VB-adc"/>
                             <constraint firstItem="cLK-Et-qnS" firstAttribute="centerX" secondItem="Mzq-W6-DBd" secondAttribute="centerX" id="KUz-pc-a0C"/>
                             <constraint firstItem="6PA-pN-kEp" firstAttribute="centerX" secondItem="Mzq-W6-DBd" secondAttribute="centerX" id="Q3b-l7-Wdl"/>
+                            <constraint firstItem="EzA-oR-vA6" firstAttribute="centerX" secondItem="Mzq-W6-DBd" secondAttribute="centerX" id="eOV-9L-uZf"/>
                             <constraint firstItem="xdH-78-4Uo" firstAttribute="centerX" secondItem="Mzq-W6-DBd" secondAttribute="centerX" id="eza-Lc-l6O"/>
                             <constraint firstItem="cLK-Et-qnS" firstAttribute="top" secondItem="xdH-78-4Uo" secondAttribute="bottom" constant="75" id="hwB-Gq-95C"/>
                             <constraint firstItem="whS-wI-knh" firstAttribute="centerX" secondItem="Mzq-W6-DBd" secondAttribute="centerX" id="spD-P9-Jj6"/>
@@ -96,15 +115,17 @@
                     <connections>
                         <outlet property="darkmode" destination="exA-Y4-GFH" id="ItY-6C-wzT"/>
                         <outlet property="darkmodeFrase" destination="g6o-Tc-yV6" id="1Ew-dG-Ww3"/>
+                        <outlet property="filmsLabel" destination="mtp-mf-HVe" id="541-5A-5Fh"/>
                         <outlet property="imgUsuario" destination="6PA-pN-kEp" id="VIN-1c-yl5"/>
                         <outlet property="nomeUsuario" destination="xdH-78-4Uo" id="4VH-2J-9HI"/>
+                        <outlet property="numFilmes" destination="FQV-8f-QBu" id="V5t-bp-CoP"/>
                         <outlet property="numVersaoLabel" destination="whS-wI-knh" id="BIT-Dx-jzj"/>
                         <outlet property="versaoLabel" destination="gvi-pp-CIB" id="f5E-nE-6od"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbc-Sc-kPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297" y="-64"/>
+            <point key="canvasLocation" x="-297.10144927536237" y="-64.402173913043484"/>
         </scene>
     </scenes>
     <resources>

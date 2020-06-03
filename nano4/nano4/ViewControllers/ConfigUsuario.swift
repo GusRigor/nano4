@@ -20,11 +20,14 @@ class ConfigUsuario : UIViewController{
     @IBOutlet weak var nomeUsuario: UILabel!
     @IBOutlet weak var darkmodeFrase: UILabel!
     @IBOutlet weak var darkmode: UISwitch!
+    @IBOutlet weak var filmsLabel: UILabel!
+    @IBOutlet weak var numFilmes: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         carregarPreferenciasEstilo()
+        numFilmesAssistidos()
     }
     
     
@@ -38,6 +41,8 @@ class ConfigUsuario : UIViewController{
                 self.imgUsuario.tintColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
                 self.nomeUsuario.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
                 self.darkmodeFrase.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+                self.filmsLabel.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+                self.numFilmes.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
                 self.tabBarController?.tabBar.backgroundColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
             }else{
                 self.view.backgroundColor = .some(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
@@ -46,6 +51,8 @@ class ConfigUsuario : UIViewController{
                 self.imgUsuario.tintColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
                 self.nomeUsuario.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
                 self.darkmodeFrase.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+                self.filmsLabel.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+                self.numFilmes.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
                 self.tabBarController?.tabBar.backgroundColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
             }
         }
@@ -58,6 +65,8 @@ class ConfigUsuario : UIViewController{
             self.imgUsuario.tintColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
             self.nomeUsuario.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
             self.darkmodeFrase.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+            self.filmsLabel.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+            self.numFilmes.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
             self.tabBarController?.tabBar.backgroundColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
         }else{
             self.view.backgroundColor = .some(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
@@ -66,6 +75,8 @@ class ConfigUsuario : UIViewController{
             self.imgUsuario.tintColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
             self.nomeUsuario.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
             self.darkmodeFrase.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+            self.filmsLabel.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+            self.numFilmes.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
             self.tabBarController?.tabBar.backgroundColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
         }
     }
@@ -81,6 +92,10 @@ class ConfigUsuario : UIViewController{
         atualizarEstilo()
         salvarPreferenciaEstilo()
         NotificationCenter.default.post(name: NSNotification.Name.init("atualizarEstilo"), object: nil)
+    }
+    
+    func numFilmesAssistidos(){
+        numFilmes.text = String(dataSourceArray.count)
     }
     
     func salvarPreferenciaEstilo(){

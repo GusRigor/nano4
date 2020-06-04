@@ -14,6 +14,8 @@ class CadastrarFilmeSerieViewController: UIViewController {
     @IBOutlet weak var duracaoTextField: UITextField!
     @IBOutlet weak var urlTextField: UITextField!
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,10 +26,9 @@ class CadastrarFilmeSerieViewController: UIViewController {
         let duracao = duracaoTextField.text
         let url = urlTextField.text
             
-//        if titulo != nil && duracao != nil {
-//            self.appDelegate.insertRecord(titulo: titulo!, duracao: duracao!, imgURL: url!)
-//            self.fetchAndUpdateTable()
-//        }
+       if titulo != nil && duracao != nil {
+            self.appDelegate.insertRecord(titulo: titulo!, duracao: Int32(duracao!)!, imgURL: url ?? "")
+        }
     }
     
 }

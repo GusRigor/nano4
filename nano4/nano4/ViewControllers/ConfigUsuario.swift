@@ -28,6 +28,7 @@ class ConfigUsuario : UIViewController{
         super.viewDidLoad()
         carregarPreferenciasEstilo()
         numFilmesAssistidos()
+        carregarNome()
     }
     
     
@@ -100,6 +101,11 @@ class ConfigUsuario : UIViewController{
     
     func salvarPreferenciaEstilo(){
         UserDefaults.standard.set(isDarkMode, forKey: "DarkMode")
+    }
+    
+    func carregarNome(){
+        let nome = UserDefaults.standard.object(forKey: "NomeUsuario") as? String
+        nomeUsuario.text = nome
     }
     
     func carregarPreferenciasEstilo(){

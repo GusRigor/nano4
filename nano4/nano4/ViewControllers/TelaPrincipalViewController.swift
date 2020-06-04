@@ -80,7 +80,7 @@ class TelaPrincipal : UIViewController{
         let salvo = UserDefaults.standard.bool(forKey: "taSalvo")
         if salvo{
             inidicacaoIniciar.isHidden = false
-            toqueParaComeçar.isHidden = true
+            toqueParaComeçar.isHidden = false
             comecarButton.isHidden = true
             nomeTextField.isHidden = true
         }else{

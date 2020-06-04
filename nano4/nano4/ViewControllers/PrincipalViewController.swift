@@ -73,7 +73,7 @@ class Principal: UIViewController, UITableViewDataSource, UITableViewDelegate{
         carregaBancoDeDados()
         atualizaHorasTotais()
         carregarPreferenciasEstilo()
-        print(UserDefaults.standard.bool(forKey: "taSalvo") ?? " ")
+        print(UserDefaults.standard.bool(forKey: "taSalvo"))
         print(UserDefaults.standard.object(forKey: "NomeUsuario") ?? " ")
         
     }

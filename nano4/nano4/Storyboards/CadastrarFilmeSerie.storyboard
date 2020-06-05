@@ -40,6 +40,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xzp-aQ-c3Z">
                                 <rect key="frame" x="40" y="245" width="295" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -49,10 +50,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total em minutos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJm-fU-H3k">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Total em minutos" borderStyle="roundedRect" placeholder="Total em minutos" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJm-fU-H3k">
                                 <rect key="frame" x="40" y="344" width="295" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL da Capa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9y-dd-Vrl">
                                 <rect key="frame" x="40" y="412" width="116.5" height="23"/>
@@ -62,6 +65,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="swF-6L-6mP">
                                 <rect key="frame" x="40" y="443" width="295" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -116,6 +120,10 @@
                     <navigationItem key="navigationItem" id="vMT-XW-brP"/>
                     <connections>
                         <outlet property="duracaoTextField" destination="QJm-fU-H3k" id="9Z8-It-7aX"/>
+                        <outlet property="img" destination="fap-be-X41" id="3BJ-a9-ef5"/>
+                        <outlet property="labelDuracao" destination="OTJ-QW-EC2" id="mac-0X-Ol7"/>
+                        <outlet property="labelURL" destination="s9y-dd-Vrl" id="xJh-c2-DMB"/>
+                        <outlet property="labeltitulo" destination="0pT-ye-Mxc" id="ehR-1g-sw5"/>
                         <outlet property="tituloTextField" destination="Xzp-aQ-c3Z" id="Pda-Gv-X16"/>
                         <outlet property="urlTextField" destination="swF-6L-6mP" id="azg-uf-bgt"/>
                     </connections>

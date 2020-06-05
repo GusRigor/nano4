@@ -32,7 +32,7 @@
 		1C2912F22486DD7300C96A84 /* ConfigUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUsuario.swift; sourceTree = "<group>"; };
 		1C95EA3024818168001BE5E5 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		1CC4B04A248AC8C800BC3CB7 /* AlterarNomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlterarNomeViewController.swift; sourceTree = "<group>"; };
-		1CD24F32247DCC170064B62F /* nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD24F32247DCC170064B62F /* Watch Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD24F35247DCC170064B62F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CD24F37247DCC170064B62F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1CD24F39247DCC170064B62F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		1CD24F33247DCC170064B62F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1CD24F32247DCC170064B62F /* nano4.app */,
+				1CD24F32247DCC170064B62F /* Watch Time.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			);
 			name = nano4;
 			productName = nano4;
-			productReference = 1CD24F32247DCC170064B62F /* nano4.app */;
+			productReference = 1CD24F32247DCC170064B62F /* Watch Time.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -347,7 +347,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = t1.nano4;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Watch Time";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = t1.nano4;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Watch Time";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

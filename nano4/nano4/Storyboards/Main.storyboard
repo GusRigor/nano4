@@ -10,16 +10,16 @@
         <!--Cadastrar Usuario View Controller-->
         <scene sceneID="naL-qw-HUS">
             <objects>
-                <viewController id="BvP-Ym-7Ef" customClass="CadastrarUsuarioViewController" customModule="nano4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BvP-Ym-7Ef" customClass="CadastrarUsuarioViewController" customModule="Watch_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r7T-pJ-c2d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RF-eE-V8h">
-                                <rect key="frame" x="162" y="493" width="90" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RF-eE-V8h">
+                                <rect key="frame" x="147" y="525" width="120" height="36"/>
                                 <color key="backgroundColor" red="0.432332243" green="0.072371399439999998" blue="0.06620832687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="VUp-0g-jGt"/>
+                                    <constraint firstAttribute="width" constant="120" id="JWN-wr-V8l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,8 +31,8 @@
                                     <segue destination="6JW-VY-NX5" kind="presentation" identifier="telaPrincipal" id="aO0-lb-PIG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cH-kO-Kzi">
-                                <rect key="frame" x="60" y="396" width="294" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cH-kO-Kzi">
+                                <rect key="frame" x="60" y="431" width="294" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -42,6 +42,7 @@
                             <constraint firstItem="4RF-eE-V8h" firstAttribute="top" secondItem="9cH-kO-Kzi" secondAttribute="bottom" constant="60" id="D39-Pl-GOR"/>
                             <constraint firstItem="9cH-kO-Kzi" firstAttribute="centerX" secondItem="r7T-pJ-c2d" secondAttribute="centerX" id="GUo-46-dQ6"/>
                             <constraint firstItem="9cH-kO-Kzi" firstAttribute="leading" secondItem="IAr-OF-cIC" secondAttribute="leading" constant="60" id="lH8-49-yDR"/>
+                            <constraint firstItem="9cH-kO-Kzi" firstAttribute="centerY" secondItem="r7T-pJ-c2d" secondAttribute="centerY" id="lIS-eu-48l"/>
                             <constraint firstItem="IAr-OF-cIC" firstAttribute="trailing" secondItem="9cH-kO-Kzi" secondAttribute="trailing" constant="60" id="n7M-I3-BnX"/>
                             <constraint firstItem="4RF-eE-V8h" firstAttribute="centerX" secondItem="r7T-pJ-c2d" secondAttribute="centerX" id="pxA-lv-H0z"/>
                         </constraints>

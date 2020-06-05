@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,13 +27,13 @@
         <!--Listar Filme Serie View Controller-->
         <scene sceneID="IuF-ZS-57p">
             <objects>
-                <viewController id="wUT-bk-UMP" customClass="ListarFilmeSerieViewController" customModule="nano4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wUT-bk-UMP" customClass="ListarFilmeSerieViewController" customModule="Watch_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2en-Fw-qIV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="film" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="U68-cG-Vdc">
-                                <rect key="frame" x="157" y="61.666666666666657" width="100" height="87"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="film" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="U68-cG-Vdc">
+                                <rect key="frame" x="157" y="60.666666666666629" width="100" height="87"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="He5-RD-XV4"/>
@@ -60,44 +59,31 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filmes assistidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh9-7O-GgU">
-                                <rect key="frame" x="108.33333333333333" y="175" width="197.33333333333337" height="32.333333333333343"/>
+                                <rect key="frame" x="116.33333333333333" y="175" width="197.33333333333337" height="32.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PAB-hs-0zu">
-                                <rect key="frame" x="30" y="228.33333333333334" width="354" height="24"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Total de filmes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W9-GB-nn1">
-                                        <rect key="frame" x="0.0" y="0.0" width="173" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xf-4Z-4Nn">
-                                        <rect key="frame" x="181" y="0.0" width="173" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYh-td-2Hy">
+                                <rect key="frame" x="78.333333333333329" y="175" width="30" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="cvz-je-345" firstAttribute="centerX" secondItem="2en-Fw-qIV" secondAttribute="centerX" id="1Aw-tu-uyV"/>
-                            <constraint firstItem="PAB-hs-0zu" firstAttribute="centerX" secondItem="2en-Fw-qIV" secondAttribute="centerX" id="61X-Ag-6Fw"/>
                             <constraint firstItem="U68-cG-Vdc" firstAttribute="top" secondItem="fOh-15-u9k" secondAttribute="top" constant="60" id="84g-1F-PVH"/>
                             <constraint firstItem="U68-cG-Vdc" firstAttribute="centerX" secondItem="2en-Fw-qIV" secondAttribute="centerX" id="GtX-8B-46S"/>
                             <constraint firstItem="uh9-7O-GgU" firstAttribute="top" secondItem="U68-cG-Vdc" secondAttribute="bottom" constant="25" id="J9O-9H-fec"/>
                             <constraint firstItem="cvz-je-345" firstAttribute="top" secondItem="uh9-7O-GgU" secondAttribute="bottom" constant="50" id="UNW-A6-8ii"/>
-                            <constraint firstItem="PAB-hs-0zu" firstAttribute="leading" secondItem="fOh-15-u9k" secondAttribute="leading" constant="30" id="all-2I-nLt"/>
+                            <constraint firstItem="uh9-7O-GgU" firstAttribute="centerX" secondItem="2en-Fw-qIV" secondAttribute="centerX" constant="8" id="bMi-L4-1dz"/>
                             <constraint firstItem="cvz-je-345" firstAttribute="leading" secondItem="fOh-15-u9k" secondAttribute="leading" constant="20" id="e4v-sT-8Hz"/>
                             <constraint firstItem="fOh-15-u9k" firstAttribute="trailing" secondItem="cvz-je-345" secondAttribute="trailing" constant="20" id="fFE-hu-Wyp"/>
-                            <constraint firstItem="uh9-7O-GgU" firstAttribute="centerX" secondItem="2en-Fw-qIV" secondAttribute="centerX" id="lbF-6t-0kw"/>
+                            <constraint firstItem="KYh-td-2Hy" firstAttribute="top" secondItem="fOh-15-u9k" secondAttribute="top" constant="175" id="foX-Ab-IIQ"/>
+                            <constraint firstItem="uh9-7O-GgU" firstAttribute="leading" secondItem="KYh-td-2Hy" secondAttribute="trailing" constant="8" id="kR4-2g-GdB"/>
                             <constraint firstItem="fOh-15-u9k" firstAttribute="bottom" secondItem="cvz-je-345" secondAttribute="bottom" constant="20" id="o80-J3-V00"/>
-                            <constraint firstItem="fOh-15-u9k" firstAttribute="trailing" secondItem="PAB-hs-0zu" secondAttribute="trailing" constant="30" id="rnh-VA-HFw"/>
-                            <constraint firstItem="cvz-je-345" firstAttribute="top" secondItem="PAB-hs-0zu" secondAttribute="bottom" constant="5" id="xtF-kq-HmP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fOh-15-u9k"/>
                     </view>
@@ -106,8 +92,7 @@
                         <outlet property="fraseTela" destination="uh9-7O-GgU" id="f9g-TI-Prl"/>
                         <outlet property="imgFilmeSerie" destination="U68-cG-Vdc" id="p4l-dW-p1K"/>
                         <outlet property="listaFilmeSerie" destination="cvz-je-345" id="A5X-vD-vMR"/>
-                        <outlet property="numFilme" destination="9Xf-4Z-4Nn" id="rCt-ks-wjt"/>
-                        <outlet property="totalFime" destination="2W9-GB-nn1" id="wON-bI-PaK"/>
+                        <outlet property="numFilme" destination="KYh-td-2Hy" id="fai-9P-d9u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVs-At-Mr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

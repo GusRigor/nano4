@@ -115,6 +115,7 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
             appDelegate.deleteRecord(filme: filme)
             fetchAndUpdateTable()
             carregaQtdFilme()
+            NotificationCenter.default.post(name: NSNotification.Name.init("novoFilme"), object: nil)
         }
     }
     

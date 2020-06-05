@@ -36,11 +36,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="hhW-L2-fff">
+                                <rect key="frame" x="157" y="271" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="XI0-5B-Uq1"/>
+                                    <constraint firstAttribute="height" constant="100" id="eGu-0J-Ixa"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="4RF-eE-V8h" firstAttribute="top" secondItem="9cH-kO-Kzi" secondAttribute="bottom" constant="60" id="D39-Pl-GOR"/>
                             <constraint firstItem="9cH-kO-Kzi" firstAttribute="centerX" secondItem="r7T-pJ-c2d" secondAttribute="centerX" id="GUo-46-dQ6"/>
+                            <constraint firstItem="9cH-kO-Kzi" firstAttribute="top" secondItem="hhW-L2-fff" secondAttribute="bottom" constant="60" id="OKT-6N-jq6"/>
+                            <constraint firstItem="hhW-L2-fff" firstAttribute="centerX" secondItem="r7T-pJ-c2d" secondAttribute="centerX" id="Zq5-7G-t06"/>
                             <constraint firstItem="9cH-kO-Kzi" firstAttribute="leading" secondItem="IAr-OF-cIC" secondAttribute="leading" constant="60" id="lH8-49-yDR"/>
                             <constraint firstItem="9cH-kO-Kzi" firstAttribute="centerY" secondItem="r7T-pJ-c2d" secondAttribute="centerY" id="lIS-eu-48l"/>
                             <constraint firstItem="IAr-OF-cIC" firstAttribute="trailing" secondItem="9cH-kO-Kzi" secondAttribute="trailing" constant="60" id="n7M-I3-BnX"/>
@@ -67,4 +76,7 @@
             <point key="canvasLocation" x="658" y="86"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo1" width="269" height="271"/>
+    </resources>
 </document>

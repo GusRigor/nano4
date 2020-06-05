@@ -23,12 +23,26 @@ class ConfigUsuario : UIViewController{
     @IBOutlet weak var filmsLabel: UILabel!
     @IBOutlet weak var numFilmes: UILabel!
     
+    let notificacao = Notification.Name(rawValue: "atualizarNome")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         carregarPreferenciasEstilo()
         numFilmesAssistidos()
         carregarNome()
+        observer()
+    }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func observer(){
+           NotificationCenter.default.addObserver(self, selector: #selector(self.atualizaNome(notificacao:)), name: notificacao, object: nil)
+    }
+    
+    @objc func atualizaNome(notificacao: NSNotification){
+            print("a notificacao chegou")
+            carregarNome()
     }
     
     
@@ -106,6 +120,7 @@ class ConfigUsuario : UIViewController{
     func carregarNome(){
         let nome = UserDefaults.standard.object(forKey: "nomeUsuario") as? String
         nomeUsuario.text = nome
+        nomeUsuario.isHidden = false
     }
     
     func carregarPreferenciasEstilo(){

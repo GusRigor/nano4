@@ -19,6 +19,7 @@ class Principal: UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var TotalHoras: UILabel!
     
     let notificacao = Notification.Name(rawValue: "atualizarEstilo")
+    let notificacao1 = Notification.Name(rawValue: "novoFilme")
     
     let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
     
@@ -28,10 +29,16 @@ class Principal: UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
     func observer(){
         NotificationCenter.default.addObserver(self, selector: #selector(self.atualizaTelaEstilo(notificacao:)), name: notificacao, object: nil)
+         NotificationCenter.default.addObserver(self, selector: #selector(self.atualizaQtdFilme(notificacao:)), name: notificacao1, object: nil)
     }
     @objc func atualizaTelaEstilo(notificacao: NSNotification){
         print("a notificacao chegou")
         atualizarEstilo()
+    }
+    @objc func atualizaQtdFilme(notificacao: NSNotification){
+        print("a notificacao chegou1")
+        carregaBancoDeDados()
+        atualizaHorasTotais()
     }
     
     
@@ -54,7 +61,7 @@ class Principal: UIViewController, UITableViewDataSource, UITableViewDelegate{
         }
         
         
-        if aux == "Maio"{
+        if aux == "Junho"{
             cell?.textLabel?.text = aux
             cell?.detailTextLabel?.text = minutosToHora(Int(minutosTotais()))
             return cell!

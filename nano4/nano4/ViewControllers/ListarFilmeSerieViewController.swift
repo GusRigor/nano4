@@ -13,8 +13,11 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
     @IBOutlet weak var listaFilmeSerie: UITableView!
     @IBOutlet weak var imgFilmeSerie: UIImageView!
     @IBOutlet weak var fraseTela: UILabel!
+    @IBOutlet weak var totalFime: UILabel!
+    @IBOutlet weak var numFilme: UILabel!
     
     let notificacao = Notification.Name(rawValue: "atualizarEstilo")
+    let notificacao1 = Notification.Name(rawValue: "novoFilme")
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -22,6 +25,7 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
     override func viewDidLoad() {
         super.viewDidLoad()
         carregarPreferenciasEstilo()
+        carregaQtdFilme()
         observer()
         // Do any additional setup after loading the view.
     }
@@ -36,11 +40,20 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
     }
     func observer(){
            NotificationCenter.default.addObserver(self, selector: #selector(self.atualizaTelaEstilo(notificacao:)), name: notificacao, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.atualizaQtdFilme(notificacao:)), name: notificacao1, object: nil)
        }
        @objc func atualizaTelaEstilo(notificacao: NSNotification){
            print("a notificacao chegou")
            atualizarEstilo()
        }
+    @objc func atualizaQtdFilme(notificacao: NSNotification){
+        print("a notificacao chegou1")
+        carregaQtdFilme()
+    }
+    func carregaQtdFilme(){
+        fetchAndUpdateTable()
+        numFilme.text = String(dataSourceArray.count)
+    }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -101,6 +114,7 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
             let filme = dataSourceArray[indexPath.row]
             appDelegate.deleteRecord(filme: filme)
             fetchAndUpdateTable()
+            carregaQtdFilme()
         }
     }
     
@@ -135,11 +149,15 @@ class ListarFilmeSerieViewController: UIViewController, UITableViewDataSource, U
             self.view.backgroundColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
             self.fraseTela.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
             self.imgFilmeSerie.tintColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+            self.numFilme.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+            self.totalFime.textColor = .some(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
             self.listaFilmeSerie.backgroundColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
         }else{
            self.view.backgroundColor = .some(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
             self.fraseTela.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
             self.imgFilmeSerie.tintColor = .some(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+            self.numFilme.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
+            self.totalFime.textColor = .some(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1))
             self.listaFilmeSerie.backgroundColor = .some(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
             }
         fetchAndUpdateTable()

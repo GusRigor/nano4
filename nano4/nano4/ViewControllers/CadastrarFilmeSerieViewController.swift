@@ -119,6 +119,8 @@ class CadastrarFilmeSerieViewController: UIViewController {
             
        if titulo != nil && duracao != nil && url != nil {
             self.appDelegate.insertRecord(titulo: titulo!, duracao: Int32(duracao!)!, imgURL: url ?? " ")
+        
+        NotificationCenter.default.post(name: NSNotification.Name.init("novoFilme"), object: nil)
             // Criar código pra limpar os campos ou segue pra levar pra tela de quantidade de horas
         }
     }

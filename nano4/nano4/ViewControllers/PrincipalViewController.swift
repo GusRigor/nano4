@@ -75,7 +75,6 @@ class Principal: UIViewController, UITableViewDataSource, UITableViewDelegate{
         carregarPreferenciasEstilo()
         print(UserDefaults.standard.bool(forKey: "taSalvo"))
         print(UserDefaults.standard.object(forKey: "NomeUsuario") ?? " ")
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -26,7 +26,7 @@
         <!--Principal-->
         <scene sceneID="DCO-8E-1r6">
             <objects>
-                <viewController id="zXx-dj-rhE" customClass="Principal" customModule="nano4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Principal" id="zXx-dj-rhE" customClass="Principal" customModule="nano4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VdI-lu-YXm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="oU8-RZ-W3R">
             <objects>
-                <tabBarController id="ap6-GJ-brX" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="ap6-GJ-brX" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uQR-yP-Es4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

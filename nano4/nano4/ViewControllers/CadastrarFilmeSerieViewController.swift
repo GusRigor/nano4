@@ -26,8 +26,9 @@ class CadastrarFilmeSerieViewController: UIViewController {
         let duracao = duracaoTextField.text
         let url = urlTextField.text
             
-       if titulo != nil && duracao != nil {
-            self.appDelegate.insertRecord(titulo: titulo!, duracao: Int32(duracao!)!, imgURL: url ?? "")
+       if titulo != nil && duracao != nil && url != nil {
+            self.appDelegate.insertRecord(titulo: titulo!, duracao: Int32(duracao!)!, imgURL: url ?? " ")
+            // Criar código pra limpar os campos ou segue pra levar pra tela de quantidade de horas
         }
     }
     

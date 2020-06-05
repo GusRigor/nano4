@@ -12,20 +12,26 @@ import UIKit
 class TelaPrincipal : UIViewController{
     
     @IBOutlet weak var nomeTextField: UITextField!
-    @IBOutlet weak var inidicacaoIniciar: UILabel!
     @IBOutlet weak var comecarButton: UIButton!
+    
+    @IBOutlet weak var inidicacaoIniciar: UILabel!
     @IBOutlet weak var toqueParaComeçar: UIButton!
     
     var taSalvo = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if self.taSalvo{
-            inidicacaoIniciar.isHidden = false
+        
+        // Pega os dados salvos em UserDefaults com a chave "taSalvo"
+        let salvo = UserDefaults.standard.bool(forKey: "nomeUsuario")
+        
+        // Caso tenha algo salvo segue pra tela principal do app
+        if salvo{
+            performSegue(withIdentifier: "novoCadastro", sender: self)
         }else{
-            nomeTextField.isHidden = false
+
         }
-        carregarInicial()
+        
         print(taSalvo)
         observer()
     }
@@ -64,33 +70,10 @@ class TelaPrincipal : UIViewController{
     }
     
     
-    func salvarPrimeiraEntrada(){
-        UserDefaults.standard.set(self.taSalvo, forKey: "taSalvo")
-    }
-    
-    @IBAction func comecarESalvar(_ sender: Any) {
-        self.taSalvo = true
-        salvarPrimeiraEntrada()
+    @IBAction func salvarNomeUsuario(_ sender: Any) {
         if nomeTextField.text != nil{
-            UserDefaults.standard.set(nomeTextField.text, forKey: "NomeUsuario")
+            UserDefaults.standard.set(nomeTextField.text, forKey: "nomeUsuario")
         }
     }
-    
-    func carregarInicial(){
-        let salvo = UserDefaults.standard.bool(forKey: "taSalvo")
-        if salvo{
-            inidicacaoIniciar.isHidden = false
-            toqueParaComeçar.isHidden = false
-            comecarButton.isHidden = true
-            nomeTextField.isHidden = true
-        }else{
-            inidicacaoIniciar.isHidden = true
-            toqueParaComeçar.isHidden = true
-            comecarButton.isHidden = true
-            nomeTextField.isHidden = false
-        }
-    }
-
-    
     
 }

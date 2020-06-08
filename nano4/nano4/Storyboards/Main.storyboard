@@ -28,7 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="salvarNomeUsuario:" destination="BvP-Ym-7Ef" eventType="touchUpInside" id="XTn-dY-0B1"/>
-                                    <segue destination="6JW-VY-NX5" kind="presentation" identifier="telaPrincipal" id="aO0-lb-PIG"/>
+                                    <segue destination="6JW-VY-NX5" kind="presentation" identifier="telaPrincipal" modalPresentationStyle="fullScreen" id="aO0-lb-PIG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cH-kO-Kzi">
